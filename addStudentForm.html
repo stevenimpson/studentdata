@@ -1,0 +1,129 @@
+<!-- addStudentForm.html
+html coode for a form which will be displayed by request handler -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Assignment 1</title>
+	
+
+	
+	<style>
+		header
+		{
+			font-size: 2.5em;
+			font-family: sans-serif;
+			background-color: #388E3C;
+			color: white;
+			padding-top: 40px;
+			padding-bottom: 40px;
+			padding-left: 60px;
+			/*box-shadow: 0 14px 12px 0 rgba(0, 0, 0, 0.17);*/
+			
+
+		}
+
+		.nav
+		{
+			font-size: 1.5em;
+			font-family: sans-serif;
+			background-color: #CDDC39;
+			color: white;
+			padding-top: 20px;
+			padding-left: 60px;
+			padding-bottom: 20px;
+			box-shadow: 0 14px 12px 0 rgba(0, 0, 0, 0.17);
+			ma
+			rgin-bottom: 0px;
+		}
+		.nav ul {
+		    list-style-type: none;
+		    margin: 0;
+		    padding: 0;
+		    overflow: hidden;
+		}
+
+		.nav li {
+		    float: left;
+		}
+
+		.nav a {
+			text-decoration: none;
+		    display: block;
+		    padding-right: 30px;
+		    color: white
+
+
+		}
+
+		.nav li form
+		{
+			font-family: sans-serif;
+
+
+		}
+
+		.main
+		{
+			float: left;
+			width: 70%;
+			padding-top: 20px;
+			padding-left: 40px;
+			font-family: sans-serif;
+			
+		}
+	</style>
+
+</head>
+
+<body>
+	<header>Assignment 1 - ICT375 - Steven Impson</header>
+		<div class="nav">
+			<ul>
+			  <li><a href="/start">Home</a></li>
+			  <li><a href="/addStudent">Add a student</a></li>
+			  <li><a href="/startUpload">Upload a .png</a></li>
+			  <li><a href="/sameDegree">Search others in same degree</a></li>
+			  </ul>
+		</div>
+
+		
+
+		<div class="main">
+			<form method="post" id="studentForm" >
+			<fieldset>
+				<legend>Student Details:</legend>
+				<label for="studentid">Student ID:</label>
+				<input type="number" id="studentid" name="studentid" 
+				placeholder="Enter your Student ID" required/>
+				<br />
+				<label for="firstName">First Name:</label>
+				<input type="text" id="firstName" name="firstName" 
+				placeholder="Enter your first name" required/>
+				<br />
+				<label for="lastName">Last Name:</label>
+				<input type="text" id="lastName" name="lastName" 
+				placeholder="Enter your last name" required/>
+				<br />
+				<label for="age">Age:</label>
+				<input type="number" id="age" name="age" 
+				placeholder="Enter your age" required/>
+				<br />
+				<label for="gender">Gender:</label>
+				<input type="text" id="gender" name="gender" 
+				placeholder="Enter your gender" required/>
+				<br />
+				<label for="degree">Degree:</label>
+				<input type="text" id="degree" name="degree" 
+				placeholder="Enter your degree" required/>
+				<br />
+				<input type="submit" value="Add details" />
+			</fieldset>
+		</form>
+		</div>
+
+		
+	
+</body>
+
+</html>
+		
